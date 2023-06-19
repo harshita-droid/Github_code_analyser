@@ -300,7 +300,7 @@ if st.button("Analyze code"):
 
     def analyze_code_complexity(code):
         # Set up OpenAI API credentials
-        openai.api_key = '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'
+        openai.api_key = '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'
 
         # Define the prompt
         prompt = f"""I am giving you a dictionary of repositories in github which cotains all the information about 
@@ -326,16 +326,4 @@ if st.button("Analyze code"):
 
     complexity = analyze_code_complexity(final_code_dict)
     st.write(complexity)
-#     def checkURL(str):
-#
-#         regex= 'http[s]?://(?:[a-zA-Z]|[0-9]|[$-_@.&+]|[!*\(\), ]|(?:%[0-9a-fA-F][0-9a-fA-F]))+'
-#         URL= re.findall(regex,str)
-#         return URL
-# # The driver code
-#     final_url = "".join(checkURL(complexity))
-#
-#     new_file = final_url.insert(0,user_input)
-#     file_ = new_file.split('/')
-#     file_1 = file_[:-2]
-#     st.write(file_1)
 
