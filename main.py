@@ -291,6 +291,13 @@ for repo_name in final_code_dict:
 
 
 def analyze_code_complexity(code):
+    # Load the API key from an environment variable
+    api_key = os.environ.get('YOUR_API_KEY')
+
+        # Check if the API key is present
+    if api_key is None:
+      raise Exception('API key not found. Please set the YOUR_API_KEY environment variable.'
+  
     # Set up OpenAI API credentials
     openai.api_key = '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'
 
